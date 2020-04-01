@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-
+    cout << "I work" << endl;
     ShoppingList liste;
     liste.add("Hefe", 2);
     liste.add("Mehl", 3);
