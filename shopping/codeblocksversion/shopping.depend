@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1585775396 source:e:\users\jerri\documents\mega\uni\programme\c\crashkurs c++\codeblocksversion\shoppinglist.cpp
+	"shoppinglist.h"
+
+1585775395 e:\users\jerri\documents\mega\uni\programme\c\crashkurs c++\codeblocksversion\shoppinglist.h
+	<string>
+
+1585775681 source:e:\users\jerri\documents\mega\uni\programme\c\crashkurs c++\codeblocksversion\main.cpp
+	"shoppinglist.h"
+	<iostream>
+
