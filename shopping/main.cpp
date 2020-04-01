@@ -12,7 +12,7 @@ int main(){
     liste.add("Eier",8);
 
     cout << "Auf dem Einkaufszettel steht:" << endl;
-    for(int i=0;i<liste.size();i++){
+    for(unsigned int i=0;i<liste.size();i++){
         cout<< liste.count(i) << " mal " << liste.item(i) << endl;
     }
     return 0;

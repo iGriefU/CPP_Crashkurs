@@ -22,5 +22,5 @@ private:
 		unsigned int count;
 	};
     Entry* itemList; //erstmal leere "liste" pointer, der die Entrys halten wird
-    unsigned int listSize = 0;
+    unsigned int listSize;
 };

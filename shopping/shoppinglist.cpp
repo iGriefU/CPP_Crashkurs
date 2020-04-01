@@ -1,11 +1,20 @@
 #include "shoppinglist.h"
 
+ShoppingList::ShoppingList(){
+
+    listSize=0;
+    itemList=nullptr;
+}
+
 ShoppingList::~ShoppingList(){
     delete [] itemList;
 }
+
 bool ShoppingList::empty(){
     
-    if(itemList==NULL){ // auch machbar mit (listSize==0)
+    if(listSize){ // auch machbar mit (listSize==0)
+        return false;
+    }else{
         return true;
     }
 }
@@ -25,13 +34,13 @@ unsigned int ShoppingList::count(unsigned int index){
 void ShoppingList::add(string item, unsigned int count){
     
     Entry* temp= new Entry[listSize++];
-    for(int i=0;i<listSize;i++){ //liste kopieren
+    for(unsigned int i=0;i<listSize;i++){ //liste kopieren
         temp[i].item = itemList->item;
         temp[i].count = itemList->count;
     }
     delete itemList;
     temp[listSize].item = item;  //neues element hinzufügen
     temp[listSize].count = count;
-    Entry* itemList = temp; //überschreiben
+    itemList = temp; //überschreiben
     delete temp;
 }
