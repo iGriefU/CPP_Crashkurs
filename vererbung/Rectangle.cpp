@@ -17,7 +17,7 @@ class Rectangle : public Shape{
         }
 
         std::string name() const override{
-            return this->name; // 
+            return m_name; // 
         }
         /*
         .\Rectangle.cpp:26:21: error: 'std::__cxx11::string Rectangle::name' conflicts with a previous declaration
@@ -33,6 +33,6 @@ class Rectangle : public Shape{
         */
     private:
         double length,height;
-        std::string name;
+        std::string m_name;
 
 };
