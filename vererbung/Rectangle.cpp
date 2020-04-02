@@ -9,6 +9,9 @@ public:
         this->height = height;
         this->length = length;
     }
+    ~Rectangle(){
+        delete &length,&height,&m_name;
+    }
 
     double area() const override
     {
@@ -25,7 +28,7 @@ public:
         return m_name;
     }
 
-private:
-    double length, height;
-    std::string m_name;
+    private:
+        double length, height;
+        std::string m_name;
 };
