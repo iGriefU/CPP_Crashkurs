@@ -12,4 +12,5 @@ public:
 	virtual std::string name() const = 0;
 	virtual double circumfence() const = 0;
 	virtual double area() const = 0;
+    
 };
