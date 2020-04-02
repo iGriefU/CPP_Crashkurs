@@ -1,5 +1,4 @@
 #include "Shape.h"
-#include <string>
 
 class Rectangle : public Shape{
 
