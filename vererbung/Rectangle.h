@@ -4,7 +4,8 @@
 class Rectangle : public Shape
 {
 public:
-	Rectangle(double width, double height);
+	Rectangle(double height, double width){};
+	~Rectangle(){};
 
 	std::string name() const override;
 	double circumfence() const override;
