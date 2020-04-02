@@ -3,7 +3,7 @@
 class Circle : public Shape{
     public:
         Circle(double radius);
-
+        ~Circle();
         double area() const override;
         double circumfence() const override;
         std::string name() const override;

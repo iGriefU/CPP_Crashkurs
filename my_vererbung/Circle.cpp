@@ -6,6 +6,9 @@ Circle::Circle(double radius){
     this->radius = radius;
     this->m_name = "Circle";
 }
+Circle::~Circle(){
+    std::cout << this->name() << std::endl;
+}
 
 double Circle::area() const{
     return M_PI * radius * radius;
