@@ -1,34 +1,14 @@
-#include "Shape.h"
+#include "rectangle.h"
 
-class Rectangle : public Shape
+Rectangle::Rectangle(double width, double height)
 {
+	m_width = width;
+	m_height = height;
+}
 
-public:
-    Rectangle(double height, double length)
-    {
-        this->height = height;
-        this->length = length;
-    }
-    ~Rectangle(){
-        delete &length,&height,&m_name;
-    }
-
-    double area() const override
-    {
-        return length * height;
-    }
-
-    double circumfence() const override
-    {
-        return 2 * (length + height);
-    }
-
-    std::string name() const override
-    {
-        return m_name;
-    }
-
-    private:
-        double length, height;
-        std::string m_name;
-};
+std::string Rectangle::name() const
+{ return "rectangle"; }
+double Rectangle::circumfence() const
+{ return 2 * (m_width + m_height); }
+double Rectangle::area() const
+{ return m_width * m_height; }
