@@ -3,8 +3,5 @@
 class Shape
 {
 public:
-     virtual unsigned int corners()
-    {
-        return 0;
-    }
+     virtual unsigned int corners() const = 0;
 };

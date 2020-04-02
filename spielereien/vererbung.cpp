@@ -4,7 +4,7 @@
 class Triangle : public Shape
 {
 public:
-    unsigned int corners() override
+    unsigned int corners() const override
     {
         return 3;
     }
