@@ -23,6 +23,7 @@ int main()
     liste.add("Milch", 2);
     liste.add("Eier", 8);
     liste.sortByCount();
+    liste.sortByName();
     cout << "Auf dem Einkaufszettel steht:" << endl;
     for (unsigned int i = 0; i<liste.size(); i++)
     {
