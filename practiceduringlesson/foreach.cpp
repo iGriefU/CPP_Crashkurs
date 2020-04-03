@@ -13,7 +13,8 @@ int main(){
     words.push_back("general");
     words.push_back("kenobi");
 
-    for (string const& x : words)
+
+    for(string const& x : words)
     {
         cout << x << " ";
     }
